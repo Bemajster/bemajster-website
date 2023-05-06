@@ -16,7 +16,9 @@ export default function Navbar() {
             <div className="hover-underline cursor-pointer">About me</div>
           </Link>
           <div className="hover-underline cursor-pointer">Projects</div>
-          <div className="hover-underline cursor-pointer">Articles</div>
+          <Link href="/articles">
+            <div className="hover-underline cursor-pointer">Articles</div>
+          </Link>
         </div>
       </span>
     </div>
