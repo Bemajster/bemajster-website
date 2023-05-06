@@ -1,13 +1,12 @@
 import { BN } from "@/global/fonts"
 import Head from "next/head"
-import Navbar from "@/components/Navbar"
 import { motion as m } from "framer-motion"
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Bemajster.</title>
+        <title>Bemajster</title>
       </Head>
       <m.div
         initial={{ opacity: 0 }}

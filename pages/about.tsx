@@ -1,10 +1,13 @@
-import Navbar from "@/components/Navbar"
 import { BN } from "@/global/fonts"
 import { motion as m } from "framer-motion"
+import Head from "next/head"
 
 export default function About() {
   return (
     <div>
+      <Head>
+        <title>Bemajster - About me</title>
+      </Head>
       <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -39,6 +42,20 @@ export default function About() {
             condimentum ornare. Maecenas eget luctus justo, et dictum neque.
             Phasellus vel turpis scelerisque, rutrum mi nec, placerat purus.
             Donec ullamcorper aliquam accumsan.
+          </p>
+          <p>
+            Integer nec quam sed sem molestie faucibus. Vestibulum id lacinia
+            ligula, eget tempus velit. Integer a lacinia sapien, id fringilla
+            nisl. Vestibulum sit amet dignissim dui. Morbi consectetur porttitor
+            gravida. Cras ullamcorper pulvinar odio, at molestie ligula
+            ullamcorper quis. Duis suscipit, eros aliquet placerat dignissim,
+            odio augue tempor ante, eget hendrerit nisi eros id eros. Donec
+            scelerisque eu purus eu pulvinar. Aenean aliquet ante efficitur nisl
+            ullamcorper venenatis. Proin orci arcu, placerat eu aliquam porta,
+            porttitor eget elit. Etiam vehicula sapien at rhoncus mattis. Nullam
+            semper et risus interdum vestibulum. Fusce laoreet blandit aliquam.
+            Ut vel metus ac orci interdum scelerisque. Aliquam sed laoreet
+            justo.
           </p>
           <p>
             Integer nec quam sed sem molestie faucibus. Vestibulum id lacinia
