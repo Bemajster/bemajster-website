@@ -1,11 +1,15 @@
 import Navbar from "@/components/Navbar"
 import { BN } from "@/global/fonts"
+import { motion as m } from "framer-motion"
 
 export default function About() {
   return (
-    <main className="w-screen h-screen grid grid-flow-col-dense grid-cols-3">
-      <Navbar />
-      <div className="w-full h-full flex flex-col text-center p-5 pt-20">
+    <div>
+      <m.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="w-full h-full flex flex-col text-center p-5 pt-20"
+      >
         <h1 className="text-5xl">
           <span className={BN.className}>About me</span>
         </h1>
@@ -51,8 +55,7 @@ export default function About() {
             justo.
           </p>
         </div>
-      </div>
-      <div></div>
-    </main>
+      </m.div>
+    </div>
   )
 }
