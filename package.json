@@ -17,6 +17,7 @@
     "eslint": "8.39.0",
     "eslint-config-next": "13.4.1",
     "framer-motion": "^10.12.8",
+    "gray-matter": "^4.0.3",
     "i18next": "^22.4.15",
     "next": "13.4.1",
     "next-i18next": "^13.2.2",
@@ -28,5 +29,13 @@
     "remark-html": "^15.0.2",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9"
   }
 }

@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { BN } from "@/global/fonts"
 import { motion as m } from "framer-motion"
+import { getSortedPostsData } from "@/lib/posts"
 
 export default function Articles() {
   return (
@@ -11,12 +12,12 @@ export default function Articles() {
       <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="w-full h-full flex flex-col text-center p-5 pt-20"
+        className="w-full h-full flex flex-col p-5 pt-20"
       >
-        <h1 className="text-5xl">
+        <h1 className="text-5xl text-center">
           <span className={BN.className}>Articles</span>
         </h1>
-        <div className="text-start p-5"></div>
+        <ul className="list-disc"></ul>
       </m.div>
     </div>
   )
